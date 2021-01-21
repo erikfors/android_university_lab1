@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="A GIRL'S GUIDE TO MOVING ON" />
 
     <TextView
         android:id="@+id/book_author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="Debbie Macomber" />
+
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        tools:text="A mother and her daughter-in-law both leave unhappy marriages and take up with new men." />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="buy on amazon"
+        android:background="#8D9CA0"
+        android:paddingHorizontal="@dimen/text_margin"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/text_margin"/>
+
 </LinearLayout>
